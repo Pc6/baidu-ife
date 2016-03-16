@@ -116,6 +116,7 @@
 					<li>排名三</li>
 				</ol>
 				<table border="1">
+					<caption>加上border=1好看上去是表格</caption>
 					<tr>
 						<th>表头</th>
 						<th>表头</th>
@@ -153,37 +154,66 @@
 					<h3>侧栏注册窗口标题</h3>
 				</hgroup>			
 				<form>
-					<p>
-						<label>请输入邮箱地址：</label>
-						<input type="email" placeholder="这是一个文本输入框" name="email">
-					</p>				
-					<p>邮箱地址请按格式输入</p>
-					<p>
-						<label>请输入密码：</label>
-						<input type="password" placeholder="这是一个文本输入框" name="password">
-						<label>请重复输入密码：</label>
-						<input type="password" placeholder="这是一个文本输入框" name="password_re">
-					</p>				
-					<p>密码请为6-12位英文数字</p>
-					<p>
-						<span>性别：</span>
-						<input type="radio" name="sex" value="male" id="male"><label for="male">男</label> 
-						<input type="radio" name="sex" value="female" id="female"><label for="female">女</label>
-						<span>城市：</span>
-						<select name="cities">
-							<option selected="selected" value="Beijing">北京</option>
-							<option value="Guangzhou">广州</option>
-						</select>
-						<span>爱好：</span>
-						<input type="checkbox" name="hobbies" value="sport" id="sport"><label for="sport">运动</label>
-						<input type="checkbox" name="hobbies" value="art" id="art"><label for="art">艺术</label>
-						<input type="checkbox" name="science" value="science" id="science"><label for="science">科学</label>
-						<span>个人描述：</span>
-						<textarea type="textarea" cols="25" rows="2" name="description">
-							这是一个多行输入框，请输入你的个人描述
-						</textarea>
-						<input type="submit" value="确认提交">
-					</p>				
+					<div class="input_group">
+						<div class="label">
+							<label for="email">请输入邮箱地址：</label>
+						</div>
+						<div class="input">	
+							<input type="email" placeholder="这是一个文本输入框" name="email" id="email">				
+							<p>邮箱地址请按格式输入</p>
+						</div>
+					</div>
+					<div class="input_group">
+						<div class="label">
+							<label for="password">请输入密码：</label>
+						</div>
+						<div class="input">
+							<input type="password" placeholder="这是一个文本输入框" name="password" id="password">
+						</div>
+					</div>	
+					<div class="input_group">
+						<div class="label">
+							<label for="password_re">请重复输入密码：</label>						
+						</div>				
+						<div class="input">
+							<input type="password" placeholder="这是一个文本输入框" name="password_re" id="password_re">
+							<p>密码请为6-12位英文数字</p>
+						</div>
+					</div>									
+					<div class="input_group">
+						<span class="label">性别：</span>
+						<div class="input">
+							<input type="radio" name="sex" value="male" id="male"><label for="male">男</label> 
+							<input type="radio" name="sex" value="female" id="female"><label for="female">女</label>
+						</div>
+					</div>
+					<div class="input_group">
+						<span class="label">城市：</span>
+						<div class="input">
+							<select name="cities">
+								<option selected="selected" value="Beijing">北京</option>
+								<option value="Guangzhou">广州</option>
+							</select>
+						</div>
+					</div>
+					<div class="input_group">
+						<span class="label">爱好：</span>
+						<div class="input">
+							<input type="checkbox" name="hobbies" value="sport" id="sport"><label for="sport">运动</label>
+							<input type="checkbox" name="hobbies" value="art" id="art"><label for="art">艺术</label>
+							<input type="checkbox" name="hobbies" value="science" id="science"><label for="science">科学</label>
+						</div>						
+					</div>
+					<div class="input_group">
+						<span class="label">个人描述：</span>
+						<div class="input">
+							<textarea type="textarea" cols="25" rows="1" name="description">这是一个多行输入框，请输入你的个人描述
+							</textarea>
+						</div>						
+					</div>
+					<div id="submit">
+						<button type="submit">确认提交</button>
+					</div>				
 				</form>			
 			</aside>
 		</div>				
