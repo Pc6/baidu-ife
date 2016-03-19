@@ -10,6 +10,7 @@ body{
 	font: 12px/150% 'Microsoft Yahei',Arial,sans-serif;
 	color: #000;
 	background-color: rgb(222,222,222);
+	min-width: 520px;
 }
 
 ul,ol{
@@ -210,9 +211,9 @@ textarea{
 
 footer{
 	width: 100%;
-	height: 100px;
+	height: 50px;
 	margin-top: 20px;
-	padding: 10px;
+	padding-top: 10px;
 	color: #fff;
 	text-align: center;
 	background-color: #000;	
