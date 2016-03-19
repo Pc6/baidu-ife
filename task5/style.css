@@ -6,15 +6,11 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,table,td,img,div{
 	border: 0;
 }
 
-html{
-	font-size: 62.5%;  /*font-size默认10px*/
-}
-
 body{	
 	font: 12px/150% 'Microsoft Yahei',Arial,sans-serif;
-	font-size: 1.2rem;                                      /*设置字体自适应，1.2rem=12px*/
 	color: #000;
 	background-color: rgb(222,222,222);
+	min-width: 700px;
 }
 
 ul,ol{
@@ -90,14 +86,12 @@ article{
 article h2{
 	margin: 15px 0;
 	font-size: 20px;
-	font-size: 2rem;
 }
 
 article h3{
 	margin: 10px 0;
 	color: rgb(101,101,101);
 	font-size: 15px;
-	font-size: 1.5rem;
 }
 
 img{
@@ -228,7 +222,6 @@ textarea{
 	border-radius: 10px;
 	color: #fff;
 	font-size: 17px;
-	font-size: 1.7rem;
 	font-weight: bold;
 	background-color: rgb(51,85,208);
 	cursor: pointer;
