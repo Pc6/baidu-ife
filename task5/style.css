@@ -64,9 +64,14 @@ nav{
 
 /*----------content------------*/
 
-#content{
-	width: 960px;
+#container{
+	width: 95%;
 	margin: auto;
+	position: relative;
+}
+
+#content{
+	margin-right: 33%;
 }
 
 article{
@@ -146,7 +151,10 @@ table tr:last-child{
 /*-------------aside----------------*/
 
 aside{
-	width: 100%;
+	width: 450px;
+	position: absolute;
+	top: 0;
+	right: 0;
 	background-color: #fff;
 	padding: 20px;
 	margin-top: 20px;
