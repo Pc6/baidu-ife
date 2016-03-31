@@ -18,7 +18,7 @@
       btn = document.getElementById('button'),
       display = document.getElementById('aqi-display'); //获取元素
   btn.onclick = function(){
-    display.textContent = input.value.replace(/(^\s*)|(\s*$)/g,'') ? input.value : "录入内容无效"; //给文本内容赋值
+    display.textContent = input.value.trim() ? input.value : "录入内容无效"; //给文本内容赋值
   }
 
 })();
