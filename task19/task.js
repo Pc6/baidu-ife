@@ -17,11 +17,11 @@ function delBox(direction){
 			}
 			switch(direction){
 				case 'left':
-					alert(boxes[0].textContent);
+					alert(boxes[0].title);
 					queue.removeChild(boxes[0]);				
 					break;
 				case 'right':
-					alert(boxes[boxes.length-1].textContent);
+					alert(boxes[boxes.length-1].title);
 					queue.removeChild(boxes[boxes.length-1]);
 					break;
 				default: break;
@@ -52,7 +52,7 @@ function addBox(direction){
 			return;
 		}
 		var newBox = document.createElement('span');
-		newBox.textContent = content.value;
+		newBox.title = content.value;
 		newBox.style.height = content.value + 'px';
 		newBox.classList.add('box');
 		switch(direction){
@@ -71,7 +71,7 @@ function bubbleSort(nodes){
 	return function(){
 		for (var i = 0, len = nodes.length; i < len; i++){
 			for (var j = 1; j < len - i; j++){
-				if (nodes[j-1].textContent > nodes[j].textContent){
+				if (parseInt(nodes[j-1].title) > parseInt(nodes[j].title)){
 					var temp1 = nodes[j-1].cloneNode(true);
 					var temp2 = nodes[j].cloneNode(true);
 					queue.replaceChild(temp2, nodes[j-1]);
@@ -95,6 +95,15 @@ function init(){
 	right_out.onclick = delBox('right');
 	sort.onclick = bubbleSort(boxes);
 	queue.onclick = delBox();
+
+	for (var i = 0; i < 30; i++){
+		var block = document.createElement('span');
+		var val = Math.ceil((Math.random() * 90) + 10);
+		block.title = parseInt(val);
+		block.style.height = val + 'px';
+		block.classList.add('box');
+		queue.appendChild(block);
+	}
 }
 
 init();
