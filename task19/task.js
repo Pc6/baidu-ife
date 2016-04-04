@@ -69,16 +69,29 @@ function addBox(direction){
 
 function bubbleSort(nodes){
 	return function(){
-		for (var i = 0, len = nodes.length; i < len; i++){
-			for (var j = 1; j < len - i; j++){
-				if (parseInt(nodes[j-1].title) > parseInt(nodes[j].title)){
-					var temp1 = nodes[j-1].cloneNode(true);
-					var temp2 = nodes[j].cloneNode(true);
-					queue.replaceChild(temp2, nodes[j-1]);
-					queue.replaceChild(temp1, nodes[j]);
+		//使用setTimeout来模拟循环的延时
+		(function(i, j){
+			loop = function(){
+				if (i < nodes.length){
+					if (j < nodes.length - i){
+						if (parseInt(nodes[j-1].title) > parseInt(nodes[j].title)){
+							var temp1 = nodes[j-1].cloneNode(true);
+							var temp2 = nodes[j].cloneNode(true);
+							queue.replaceChild(temp2, nodes[j-1]);
+							queue.replaceChild(temp1, nodes[j]);
+						}
+						j++;
+						setTimeout(loop,50);
+					}else{
+						i++;
+						j = 1;
+						setTimeout(loop,50);
+					}					
 				}
 			}
-		}
+			setTimeout(loop,50);
+		})(0, 1);
+		
 	}
 }
 
@@ -96,6 +109,7 @@ function init(){
 	sort.onclick = bubbleSort(boxes);
 	queue.onclick = delBox();
 
+	//初始化生成队列元素
 	for (var i = 0; i < 30; i++){
 		var block = document.createElement('span');
 		var val = Math.ceil((Math.random() * 90) + 10);
