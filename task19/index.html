@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>Task 18</title>
+		<style type="text/css">
+			#queue{
+				display: flex;
+				align-items: flex-end;
+				height: 110px;
+			}
+			.box{
+				display: inline-block;
+				width: 30px;
+				margin: 5px 10px 0 0;
+				font-family: '微软雅黑';
+				text-align: center;
+				color: #fff;
+				background-color: red;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="content">
+		<button id="left-in">左侧进</button>
+		<button id="right-in">右侧进</button>
+		<button id="left-out">左侧出</button>
+		<button id="right-out">右侧出</button>
+		<button id="sort">排序</button>
+		<div id="queue">			
+		</div>
+		<script type="text/javascript" src="task.js"></script>
+	</body>
+</html>
