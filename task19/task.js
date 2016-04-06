@@ -8,8 +8,8 @@ var queue = document.getElementById('queue'),
 
 function delBox(direction){
 	return function(e){
-		var e = e || window.event,
-		    target = e.target || e.srcElement;		
+		e = event || window.event;
+		var target = e.target || e.srcElement;		
 		if (boxes.length !== 0){
 			if (target.tagName.toLowerCase() === 'span'){
 				queue.removeChild(target);
@@ -88,7 +88,7 @@ function bubbleSort(nodes){
 						setTimeout(loop,50);
 					}					
 				}
-			}
+			};
 			setTimeout(loop,50);
 		})(0, 1);
 		
