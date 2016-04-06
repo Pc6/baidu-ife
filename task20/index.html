@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>Task 18</title>
+		<style type="text/css">
+			.box{
+				display: inline-block;
+				min-width: 30px;
+				padding: 10px;
+				margin: 5px 10px 0 0;
+				font-family: '微软雅黑';
+				text-align: center;
+				line-height: 30px;
+				color: #fff;
+				background-color: red;
+				cursor: pointer;
+			}
+			#queue{
+				margin-top: 10px;
+			}
+			textarea{
+				resize: none;
+			}
+		</style>
+	</head>
+	<body>
+		<textarea id="content"></textarea>
+		<button id="left-in">左侧进</button>
+		<button id="right-in">右侧进</button>
+		<button id="left-out">左侧出</button>
+		<button id="right-out">右侧出</button>
+		<input id="search" type="text">
+		<button id="search-btn">搜索</button>
+		<div id="queue">
+			<span class="box">1</span>
+			<span class="box">5</span>
+			<span class="box">7</span>
+		</div>
+		<script type="text/javascript" src="task.js"></script>
+	</body>
+</html>
