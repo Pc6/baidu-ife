@@ -8,8 +8,8 @@ var queue = document.getElementById('queue'),
 
 function delBox(direction){
 	return function(e){
-		var e = e || window.event,
-		    target = e.target || e.srcElement;		
+		e = e || window.event;
+		var target = e.target || e.srcElement;		
 		if (boxes.length !== 0){
 			if (target.tagName.toLowerCase() === 'span'){
 				queue.removeChild(target);
