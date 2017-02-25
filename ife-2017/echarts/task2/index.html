@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts NO.2</title>
+    <script src="http://cdn.bootcss.com/echarts/3.4.0/echarts.min.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 600px; height: 400px; "></div>
+    <script>
+        var myChart = echarts.init(document.getElementById('main')),
+            option = {
+                title: {
+                    text: '世界人口总量',
+                    subtext: '数据来自网络',
+                    subtextStyle: {
+                        color: '#000'
+                    },
+                    left: '3%'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                legend: {
+                    data: ['2011年', '2012年'],
+                    left: '3%',
+                    top: '13%'
+                },
+                backgroundColor: 'rgb(204, 216, 223)',
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    top: '20%',
+                    containLabel: true
+                },
+                color: ['rgb(57, 117, 137)', 'rgb(73, 182, 224)'],
+                yAxis: {
+                    type: 'value',
+                    position: 'right',
+                    boundaryGap: [0, 0.01],
+                    inverse: true,
+                    splitLine: {
+                        lineStyle: {
+                            color: '#fff'
+                        }
+                    },
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    }
+                },
+                xAxis: [{
+                    type: 'category',
+                    data: ['巴西','印尼','美国','印度','中国','世界人口(万)'],
+                    axisLine: {
+                        lineStyle: {
+                            color: 'rgb(233, 105, 102)',
+                            width: 2
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        show: false
+                    }
+                }, {
+                    type: 'category',
+                    data: ['巴西','印尼','美国','印度','中国','世界人口(万)'],
+                    offset: -280,
+                    boundaryGap: true,
+                    axisLabel: {
+                        inside: true
+                    },
+                    axisTick: {
+                        alignWithLabel: true
+                    }
+                }],
+                series: [
+                    {
+                        name: '2011年',
+                        type: 'bar',
+                        data: [18203, 23489, 29034, 104970, 131744, 630230]
+                    }, {
+                        name: '2012年',
+                        type: 'bar',
+                        data: [19325, 23438, 31000, 121594, 134141, 681807]
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+    </script>
+</body>
+</html>
