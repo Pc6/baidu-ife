@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts NO.1</title>
+    <script src="http://cdn.bootcss.com/echarts/3.4.0/echarts.min.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 1000px; height: 600px; "></div>
+    <script>
+        var myChart = echarts.init(document.getElementById('main')),
+
+            options = {
+                title: {
+                    text: '房地产企业从业人员近5年人数变化'
+                },
+                legend: {
+                    data: ['内资企业从业人数', '国有企业从业人数', '房地产企业从业人数']
+                },
+                xAxis: [{
+                    type: 'category',
+                    data: ['2011', '2012', '2013', '2014', '2015']
+                }],
+                yAxis: [{
+                    type: 'value',
+                    name: '人口数'
+                }],
+                series: [{
+                    name: '内资企业从业人数',
+                    type: 'bar',
+                    data: [2551484, 2561817, 2397762, 2199815, 2075474].reverse()
+                }, {
+                    name: '国有企业从业人数',
+                    type: 'bar',
+                    data: [57273, 61512, 66072, 123593, 135420].reverse()
+                }, {
+                    name: '房地产企业从业人数',
+                    type: 'line',
+                    data: [2738454, 2760070, 2591814, 2386772, 2256964].reverse()
+                }]
+            };
+
+            myChart.setOption(options);
+    </script>
+</body>
+</html>
