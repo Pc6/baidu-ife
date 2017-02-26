@@ -44,3 +44,11 @@ Temporary Items
 .idea/vcs.xml
 *.xml
 .idea/baidu ife.iml
+
+# nodejs
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
