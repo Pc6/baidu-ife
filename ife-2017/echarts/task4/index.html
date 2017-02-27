@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts No.4 - 可视化前的数据预处理</title>
+    <script src="http://cdn.bootcss.com/echarts/3.4.0/echarts.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 600px; height: 400px;"></div>
+    <script>
+        var myChart = echarts.init(document.getElementById('main'));
+        myChart.showLoading();
+        $.getJSON('stock.json', function(stockJSON) {
+            myChart.hideLoading();
+            var option = {
+                backgroundColor: '#eee',
+                animation: false,
+                legend: {
+                    top: 10,
+                    left: '5%',
+                    data: ['A', 'MA5', 'MA10', 'MA20', 'MA30']
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'line'
+                    }
+                },
+                grid: [
+                    {
+                        left: '10%',
+                        right: '8%',
+                        height: '50%'
+                    }, {
+                        left: '10%',
+                        right: '8%',
+                        top: '70%',
+                        height: '16%'
+                    }
+                ],
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: stockJSON['A']['category'],
+                        scale: true,
+                        boundaryGap : false,
+                        axisLine: {onZero: false},
+                        splitLine: {show: false},
+                        splitNumber: 20,
+                        min: 'dataMin',
+                        max: 'dataMax'
+                    }, {
+                        type: 'category',
+                        gridIndex: 1,
+                        data: stockJSON['A']['category'],
+                        scale: true,
+                        boundaryGap : false,
+                        axisLine: {onZero: false},
+                        axisTick: {show: false},
+                        splitLine: {show: false},
+                        axisLabel: {show: false},
+                        splitNumber: 20,
+                        min: 'dataMin',
+                        max: 'dataMax'
+                    }
+                ],
+                yAxis: [
+                    {
+                        scale: true,
+                        splitArea: {
+                            show: true
+                        }
+                    }, {
+                        scale: true,
+                        gridIndex: 1,
+                        splitNumber: 2,
+                        axisLabel: {show: false},
+                        axisLine: {show: false},
+                        axisTick: {show: false},
+                        splitLine: {show: false}
+                    }
+                ],
+                dataZoom: [
+                    {
+                        type: 'inside',
+                        xAxisIndex: [0, 1],
+                        start: 66,
+                        end: 100
+                    },
+                    {
+                        show: true,
+                        xAxisIndex: [0, 1],
+                        type: 'slider',
+                        top: '90%',
+                        start: 66,
+                        end: 100
+                    }
+                ],
+                series: [
+                    {
+                        name: 'A',
+                        type: 'candlestick',
+                        data: stockJSON['A']['value'],
+                        itemStyle: {
+                            normal: {
+                                borderColor: null,
+                                borderColor0: null
+                            }
+                        },
+                        tooltip: {
+                            formatter: function (param) {
+                                var param = param[0];
+                                return [
+                                    'Date: ' + param.name + '<hr size=1 style="margin: 3px 0">',
+                                    'Open: ' + param.data[0] + '<br/>',
+                                    'Close: ' + param.data[1] + '<br/>',
+                                    'Lowest: ' + param.data[2] + '<br/>',
+                                    'Highest: ' + param.data[3] + '<br/>'
+                                ].join('');
+                            }
+                        }
+                    }, {
+                        name: 'volumn',
+                        type: 'bar',
+                        xAxisIndex: 1,
+                        yAxisIndex: 1,
+                        data: stockJSON['A']['volumn']
+                    }, {
+                        name: 'MA5',
+                        type: 'line',
+                        data: calculateMA(5, stockJSON['A']),
+                        smooth: true
+                    }, {
+                        name: 'MA10',
+                        type: 'line',
+                        data: calculateMA(10, stockJSON['A']),
+                        smooth: true
+                    }, {
+                        name: 'MA20',
+                        type: 'line',
+                        data: calculateMA(20, stockJSON['A']),
+                        smooth: true
+                    }, {
+                        name: 'MA30',
+                        type: 'line',
+                        data: calculateMA(30, stockJSON['A']),
+                        smooth: true
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+        });
+
+        function calculateMA(dayCount, data) {
+            var result = [];
+            for (var i = 0, len = data.value.length; i < len; i++) {
+                if (i < dayCount) {
+                    result.push('-');
+                    continue;
+                }
+                var sum = 0;
+                for (var j = 0; j < dayCount; j++) {
+                    sum += parseFloat(data.value[i - j][1]);
+                }
+                result.push(+(sum / dayCount).toFixed(3));
+            }
+            return result;
+        }
+
+    </script>
+</body>
+</html>
