@@ -1,0 +1,66 @@
+{
+    "code": 1,
+    "msg": "抓取成功",
+    "word": "jquery",
+    "device": "iphone5",
+    "time": 1529,
+    "dataList": [
+        {
+            "title": "jQuery_百度百科",
+            "info": "简介：jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器，如IE 6.0+、FF 1.5+、Safari 2.0+、Opera 9.0+等。",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=1/tc?ref=www_iphone&lid=957484696324693121&order=1&waplogo=1&fm=albk&tj=Xv_1_0_10_title&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=847229fbe2bcf6f1&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IJBOMLikK1De8mVjte4viZQRAWyPqLTrIBUv1sWOQaAoDlnGc27Em8xVOrhoycX9gbyy-xKigqce",
+            "pic": "https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?wisealaddin&size=8&quality=60&sec=1488360382&di=55745bf0f54a0934d02de069508ad411&src=http%3A%2F%2Ft10.baidu.com%2Fit%2Fu%3D1617207294%2C1611054%26fm%3D58"
+        },
+        {
+            "title": "jQuery官网",
+            "info": "jQuery: The Write Less, Do More, JavaScript Library... jQuery is a fast, small, and feature-rich J...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=1/tc?ref=www_iphone&lid=957484696324693121&order=2&fm=alop&tj=www_normal_2_0_10_title&url_mf_score=3&vit=osres&m=8&cltj=cloud_title&asres=1&title=jQuery&dict=32&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=8a52de73a1e1aae4&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IHAOIMDxBLDm6oIjpnK"
+        },
+        {
+            "title": "jQuery 教程",
+            "info": "在本教程中,您将通过教程以及许多在线实例,学到如何通过使用 jQuery 应用 JavaScript 效果。 jQuery 是一个...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=957484696324693121&order=3&fm=alop&tj=www_normal_3_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&title=jQuery%E6%95%99%E7%A8%8B&dict=30&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=b7af4f0341eac6b4&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_zcHATm7ok_rxP4kHRhdXHKhVnGHFkDbrSPQpq"
+        },
+        {
+            "title": "Download jQuery | jQuery",
+            "info": "jQuery: The Write Less, Do More, JavaScript Library... We also recommend using the jQuery Migrate plug...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=1/tc?ref=www_iphone&lid=957484696324693121&order=4&fm=alop&tj=www_normal_4_0_10_title&url_mf_score=3&vit=osres&m=8&cltj=cloud_title&asres=1&title=DownloadjQuery%7CjQuery&dict=30&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=5c598966414cab2c&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IHAOIMDxBLDm6oIjpnPTkFthmXT0r2Sm5"
+        },
+        {
+            "title": "jQuery 教程 | 菜鸟教程",
+            "info": "jQuery 教程 jQuery 是一个 JavaScript 库。 jQuery 极大地简化了 JavaScript 编程。 jQuery 很容易学习。 ...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=1/tc?ref=www_iphone&lid=957484696324693121&order=5&fm=alop&waplogo=1&tj=www_normal_5_0_10_title&vit=osres&waput=2&cltj=normal_title&asres=1&title=jQuery%E6%95%99%E7%A8%8B%7C%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B&dict=-1&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=eab9b6c3e7e0bd81&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IGtiDQCBL0Tj5nk_qva02GcVvZyHm2Sm5GVTgwXCXv2lIhCfdRjVq6so4g43"
+        },
+        {
+            "title": "jQuery API 3.1 中文文档 | jQuery API 中文在线手册 ....",
+            "info": "jQuery API 1.x - 3.x 中文在线版,jQuery API 中文最新版,jQuery 是一个兼容多浏览器的 JavasSript ...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=1/tc?ref=www_iphone&lid=957484696324693121&order=6&fm=alop&waplogo=1&tj=www_normal_6_0_10_title&vit=osres&waput=3&cltj=normal_title&asres=1&title=jQueryAPI3.1%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%7CjQueryAPI%E4%B8%AD%E6%96%87%E5%9C%A8%E7%BA%BF%E6%89%8B%E5%86%8C...&dict=-1&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=fbfe0024dcadd79c&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IHAOIMDxBLDmbpFqvgfLaHd1oYT7qAp7"
+        },
+        {
+            "title": "jQuery 参考手册",
+            "info": "W3school 提供完整的 jQuery 参考手册以及大量的在线实例。jQuery 参考手册 在W3School,您将找到包含所有 ...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=957484696324693121&order=7&fm=alop&tj=www_normal_7_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&title=jQuery%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&dict=30&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=14f97757898c0cda&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_zcHATm7ok_rxP4kHRhdXHKhVnGHFkDbrSPQpsNEhSHdNkdoj1QObvcqgD96ijqd"
+        },
+        {
+            "title": "jqueryschool-国内最大的jquery原创分享社区",
+            "info": "jqueryschool是国内最大的jquery原创分享社区,专门分享原创jquery插件、jquery工具、jquery特效、html5、css3、...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=957484696324693121&order=8&fm=alop&tj=www_normal_8_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&nt=wnor&title=jqueryschool-%E5%9B%BD%E5%86%85%E6%9C%80%E5%A4%A7%E7%9A%84jquery%E5%8E%9F%E5%88%9B%E5%88%86%E4%BA%AB%E7%A4%BE%E5%8C%BA&dict=32&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=b161d1ada401a899&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_yRJLymxpU_shrrgHtkfEFW",
+            "pic": "https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?wisealaddin&size=u200_200&quality=80&sec=1488360382&di=5eb482d1e22f1aa3a11e02790802adbc&src=http%3A%2F%2Fi9.baidu.com%2Fit%2Fu%3D3049366817%2C1925169316%26fm%3D78%26s%3D46F14A7C04D6F87154AE4B930200708F"
+        },
+        {
+            "title": "jQuery 核心 - jQuery() 方法",
+            "info": "jQuery() 方法接受一个字符串,其中包含了用于匹配元素集合的 CSS 选择器。 jQuery() 函数有三种语法: 语法...",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=957484696324693121&order=9&fm=alop&tj=www_normal_9_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&title=jQuery%E6%A0%B8%E5%BF%83-jQuery%28%29%E6%96%B9%E6%B3%95&dict=30&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=fb325b27f022a6cf&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_zcHATm7ok_rxP4kHRhdXHKhVnGHFkDbrSPQpsxOgiHIRSVjj2ACwvsncq"
+        },
+        {
+            "title": "jQuery(function($){...})中的 “$” 是什..._百度知道",
+            "info": "",
+            "link": "http://m.baidu.com/from=844b/bd_page_type=1/ssid=0/uid=0/pu=usm%402%2Csz%401320_2001%2Cta%40iphone_1_9.1_3_601/baiduid=EE6393F96B015503A6DAEC2A77FE3D27/w=0_10_/t=iphone/l=1/tc?ref=www_iphone&lid=957484696324693121&order=10&fm=alzd&tj=zhidao_10_0_10_l1&w_qd=IlPT2AEptyoA_yivDVKcCTm&sec=19233&di=0852e3ec94fa8cf6&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IDBqMMS6LLDivpEmixP4kHREsRC0aNWiCGkb8gTCctxUFx8Ch_GUe8xJ4qKRpsmgh6SWhuKDhg_4MXw1OytIs_hOUHjMn9uir8xt5tB1oBxy"
+        },
+        {
+            "title": "jquery_相关框架",
+            "info": "",
+            "pic": "https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?wisealaddin&size=8&quality=100&sec=1488360382&di=3472dcffba04322636c4b4497724a928&src=http%3A%2F%2Ft11.baidu.com%2Fit%2Fu%3D3360919309%2C3342273649%26fm%3D58"
+        }
+    ]
+}
